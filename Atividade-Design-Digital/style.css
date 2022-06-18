@@ -1,0 +1,266 @@
+html{
+    scroll-behavior: smooth;
+    background-color: rgb(221, 87, 87);
+}
+
+body{
+  background-color: rgb(221, 87, 87);
+}
+
+.logo {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+  
+.logoimg{
+  width: 4rem;
+  margin-right: 50px;
+  margin-top: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #b60000;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  font-size: 30px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+  
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+  
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+  
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #df1818;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+  opacity: 0;
+  }
+  
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+#msg1{
+  font-size: 80px;
+  padding-top: 100px;
+}
+
+#msg2 {
+  font-size: 50px;
+  
+}
+
+.slide-items{
+  padding-top: 15px;
+  display: flex;
+}
+
+#sec1 {
+  padding: 10px 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+  
+a:hover {
+  opacity: 0.7;
+}
+  
+#fundo {
+  background-color: rgb(221, 87, 87);
+  background-size: cover;
+  height: 92vh;
+  background-attachment: fixed;
+}
+
+.contactemail{
+  width: 50%;
+  padding-top: 20px;
+}
+
+.txt {
+  padding-top: 20px;
+  font-size: 40px;
+
+}
+
+#Categorias img {
+	width: 500px;
+	height: 600px;
+	margin: 0 5vw;
+	border:none;
+	padding: 10px;
+  justify-content: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 10px;
+  padding: 20px;
+  flex: 1 1 150px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#conteudo {
+  background-color: rgb(221, 87, 87);
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+  width: 100%;
+  bottom: 0;
+  padding-top: 0px;
+  display:in-line;
+}
+
+#contato {
+  padding-top: 160px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(221, 87, 87);
+  color: #FFF;
+}
+
+div {
+  text-align: center;
+  text-decoration: rgb(216, 39, 39);
+}
+
+.ttfooter {
+  text-shadow: 0 0 0.30em;
+  font-size: 60px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+#meio{
+  width: 80%;
+  border-radius: 30px;
+  background-color: #ff0000;
+  margin-left: 10%;
+  border: 2px outset #FFF;
+  text-align: center;
+  font-family: OCR A Std, monospace;
+  display:in-line;
+  padding-bottom: 50px;
+  text-shadow: 0 0 0.25em;
+  color: #FFF;
+}
+
+.contact h1 {
+  text-shadow: 0 0 0.25em;
+}
+
+.local {
+  text-shadow: 0 0 0.25em;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.mapa {
+  padding-top: 20px;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+.socialmedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  
+}
+
+.escola {
+  padding-top: 20px;
+}
